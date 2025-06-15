@@ -1,48 +1,49 @@
+<!-- Reference: https://mince-sign-gig.figma.site/ -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VB Resume</title>
-    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+     <style>
+        main{
+            font-family: Inter, sans-serif;
+        }
+     </style>
 </head>
 <body>
-    <main>
-        <h1>Vrushank Bardolia</h1>
-        <div class="contact">
-            <a href="#" target="_blank" rel="noopener noreferrer">vrushank1793@gmail.com</a>|
-            <a href="#" target="_blank" rel="noopener noreferrer">+91 93160 68081</a>
+    <main class="container w-lg lg:w-2xl mx-auto m-12 px-4">
+
+        <div class="header">
+            <h1 class="text-center font-bold text-4xl uppercase">Vrushank Bardolia</h1>
+            <div class="flex justify-center gap-2">
+                <a class="hover:underline"href="#">vrushank1793@gmail.com</a>|
+                <a class="hover:underline" href="#">+91 93160 68081</a>
+            </div>
         </div>
 
-        <div class="section">
-            <div class="heading">About</div>
-            <div class="section-text">A Flutter Developer who have great knowledge about UI/UX Designing.</div>
+        <div class="about mt-6">
+            <h4 class="text-lg text-zinc-900">About</h4>
+            <h5 class="text-zinc-600 leading-5">Flutter Developer with a passion for clean UI/UX and building smooth, responsive apps for web and mobile. Currently growing as a frontend developer</h5>
         </div>
 
-        <div class="section">
-            <div class="heading">Education</div>
-            <div class="data">
-                <div class="row">
-                    <div class="key">2024-Present</div>
-                    <div class="value">
-                        <div class="primary">
-                            Sarvajanik College of Engineering & Technologies
-                        </div>
-                        <div class="secondary">
-                            <i>Master of Computer Applications</i> - 9.13 CGPA
-                        </div>
-                    </div>
+        <div class="education mt-6 leading-5">
+            <h4 class="text-lg text-zinc-900">Education</h4>
+            <div class="edu mt-2 w-full lg:flex gap-8">
+                <h5 class="text-zinc-600 lg:w-1/5">2024 - Present</h5>
+                <div class="col lg:w-4/5">
+                    <h5 class="text-zinc-900">Sarvajanik College of Engineering & Technologies</h5>
+                    <h5 class="text-zinc-700">Master of Computer Applications - 9.13 CGPA</h5>
                 </div>
-                <div class="row">
-                    <div class="key">2021-2024</div>
-                    <div class="value">
-                        <div class="primary">
-                            SDJ International College, Vesu
-                        </div>
-                        <div class="secondary">
-                            <i>Bachelor of Computer Applications</i> - 8.56 CGPA
-                        </div>
-                    </div>
+            </div>
+            <div class="edu mt-2 w-full lg:flex gap-8">
+                <h5 class="text-zinc-600 lg:w-1/5">2021 - 2024</h5>
+                <div class="col lg:w-4/5">
+                    <h5 class="text-zinc-900">SDJ International College, Vesu</h5>
+                    <h5 class="text-zinc-700">Bachelor of Computer Applications - 8.56 CGPA</h5>
                 </div>
             </div>
         </div>
